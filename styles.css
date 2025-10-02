@@ -1,0 +1,152 @@
+:root {
+  --heading-font: "Inter", sans-serif;
+  --body-font: "Roboto", sans-serif;
+  --border: hsl(0, 0%, 50%);
+}
+
+:root[data-theme="light"] {
+  --color-primary: hsl(180, 100%, 50%);
+  --color-secondary: hsl(130, 100%, 50%);
+
+  --bg: hsl(0, 0%, 90%);
+  --div: hsl(0, 0%, 85%);
+  --highlight: hsl(0, 0%, 80%);
+
+  --text-sharp: hsl(0, 0%, 10%);
+  --text-muted: hsl(0, 0%, 30%);
+}
+
+:root[data-theme="dark"] {
+  --color-primary: hsl(180, 100%, 50%);
+  --color-secondary: hsl(130, 100%, 50%);
+  
+  --bg: hsl(0, 0%, 10%);
+  --div: hsl(0, 0%, 15%);
+  --highlight: hsl(0, 0%, 20%);
+
+  --text-sharp: hsl(0, 0%, 90%);
+  --text-muted: hsl(0, 0%, 70%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--text-sharp);
+}
+
+body {
+  background: var(--bg);
+  max-width: 100vw;
+  overflow: auto;
+}
+
+header {
+  min-height: 3em;
+  background-color: var(--div);
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 32px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+main {
+  background-color: var(--div);
+  min-height: calc(100vh - 6rem);
+  width: 80vw;
+  border: 1px solid var(--text-sharp);
+  margin: 0 auto;
+  padding: .5em;
+}
+footer {
+  min-height: 3em;
+  background-color: var(--div);
+  border-top: 1px solid var(--border);
+  margin-top: 32px;
+}
+
+section, article {
+    padding: 8px;
+    margin-top: 8px;
+    width: 95%;
+    border: 1px dashed var(--border);
+    overflow: auto;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--div);
+  padding: 8px;
+}
+
+div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+hr {
+  margin: 1em;
+  background-color: var(--section);
+}
+
+h1, h2 {
+    text-transform: uppercase;
+    font-family: var(--heading-font);
+}
+h1 {
+    text-align: center;
+    margin: 32px;
+}
+h2 {
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    text-transform: capitalize;
+    margin-top: 16px;
+    margin-bottom: 8px
+}
+
+p {
+    font-family: var(--body-font);
+    margin: 2px 0 8px;
+    line-height: 1.4;
+}
+
+img {
+  width: 200px;
+  display: block;
+  background-color: var(--border);
+  border: 1px double var(--text-sharp);
+}
+
+ul, ol {
+    margin: .1em 0;
+}
+
+li {
+    list-style-position: inside;
+}
+li:last-of-type {
+    margin-bottom: 8px;
+}
+
+pre {
+ background-color: var(--highlight);
+  width: 100%;
+}
+
+code {
+  background-color: var(--highlight);
+  color: var(--text-sharp);
+  padding: 2px;
+  border-radius: 4px;
+  font-family: monospace;
+}

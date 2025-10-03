@@ -2,12 +2,11 @@
   --heading-font: "Inter", sans-serif;
   --body-font: "Roboto", sans-serif;
   --border: hsl(0, 0%, 50%);
+  --color-primary: hsl(210, 90%, 45%);
+  --color-secondary: hsl(340, 80%, 50%);
 }
 
 :root[data-theme="light"] {
-  --color-primary: hsl(180, 100%, 50%);
-  --color-secondary: hsl(130, 100%, 50%);
-
   --bg: hsl(0, 0%, 90%);
   --div: hsl(0, 0%, 85%);
   --highlight: hsl(0, 0%, 80%);
@@ -16,10 +15,7 @@
   --text-muted: hsl(0, 0%, 30%);
 }
 
-:root[data-theme="dark"] {
-  --color-primary: hsl(180, 100%, 50%);
-  --color-secondary: hsl(130, 100%, 50%);
-  
+:root[data-theme="dark"] {  
   --bg: hsl(0, 0%, 10%);
   --div: hsl(0, 0%, 15%);
   --highlight: hsl(0, 0%, 20%);
@@ -48,6 +44,7 @@ header {
   margin-bottom: 32px;
   position: sticky;
   top: 0;
+  z-index: 1000;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -71,7 +68,7 @@ section, article {
     padding: 8px;
     margin-top: 8px;
     width: 95%;
-    border: 1px dashed var(--border);
+    border: 1px dotted var(--border);
     overflow: auto;
 }
 
@@ -123,8 +120,32 @@ p {
 img {
   width: 200px;
   display: block;
-  background-color: var(--border);
-  border: 1px double var(--text-sharp);
+  background: linear-gradient(-45deg, var(--highlight), var(--text-muted));
+  padding: 2px;
+}
+
+a {
+  color: var(--text-muted);
+}
+a:hover, a:focus {
+  color: var(--color-primary);
+}
+a:active {
+  color: var(--color-secondary);
+}
+
+a > img {
+  border: 2px solid var(--border);
+  animation: clickableImage 5s linear infinite;
+}
+@keyframes clickableImage {20%, 30% { border: 2px solid var(--color-primary); } 50% {border-color: var(--border); } }
+
+a > img:hover, a > img:focus {
+  border: 2px solid var(--color-primary);
+  animation: none;
+}
+a > img:active {
+  border: 2px solid var(--color-secondary);
 }
 
 ul, ol {
@@ -137,15 +158,15 @@ li {
 li:last-of-type {
     margin-bottom: 8px;
 }
-
 pre {
- background-color: var(--highlight);
+  background-color: var(--highlight);
+  padding: 1em;
   width: 100%;
 }
 
 code {
   background-color: var(--highlight);
-  color: var(--text-sharp);
+  color: var(--color-secondary);
   padding: 2px;
   border-radius: 4px;
   font-family: monospace;

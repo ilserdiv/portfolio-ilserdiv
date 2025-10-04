@@ -192,6 +192,118 @@
           </p>
         </section>
         
+        <article>
+          <h2>Adding Your First Material: Text and Color</h2>
+
+          <p>
+            Let’s start by putting text on your site. Text is the most common and one of the most important elements in any webpage—it lets you communicate ideas, details, and information to your users. 
+          </p>
+
+          <p>
+            Earlier, you learned about <em>opening</em> and <em>closing</em> tags. 
+            Now, let’s put one of the simplest tags into action. 
+            Inside your <code>&lt;body&gt;</code> section, add a <code>&lt;p&gt;</code> element. 
+            This represents a <strong>paragraph</strong> of text.
+          </p>
+
+          <pre><code>&lt;p&gt;&lt;/p&gt;</code></pre>
+
+          <p>
+            Whatever you put between these tags becomes your paragraph’s content. For example:
+          </p>
+
+          <pre><code>&lt;p&gt;Hello, World!&lt;/p&gt;</code></pre>
+
+          <p>
+            What you have now is a paragraph element containing the text <code>Hello, World!</code>.
+          </p>
+
+          <figure>
+            <img src="./img/guide-boilerplate-p.png" alt="HTML boilerplate with paragraph element inside the body">
+            <figcaption>HTML file with a paragraph element inside the body</figcaption>
+          </figure>
+
+          <p class="checkpoint">
+            🎉 Great! You’ve just added your first material. Your site now has its first visible content.
+          </p>
+
+          <hr>
+
+          <h3>Connecting the Design</h3>
+
+          <p>
+            It still looks simple for now, because we’re just <em>building</em>. 
+            Next, let’s add our first bit of <strong>design</strong>.
+          </p>
+
+          <p>
+            Create a new file and name it <code>style.css</code>. 
+            This is where we’ll place all the styling instructions. 
+            But before it can take effect, we need to link this file to our HTML so the browser knows which design belongs to which content.
+          </p>
+
+          <p>
+            Inside your <code>&lt;head&gt;</code> tag, add the <code>&lt;link&gt;</code> tag. 
+            This tells the browser we’re linking to another file.
+          </p>
+
+          <figure>
+            <img src="./img/guide-boilerplate-link.png" alt="HTML with link tag added inside head">
+            <figcaption>Adding a link tag to connect the stylesheet</figcaption>
+          </figure>
+
+          <p>
+            Next, specify the relationship of this link to the current file using the <code>rel</code> attribute:
+          </p>
+
+          <pre><code>&lt;link rel="stylesheet"&gt;</code></pre>
+
+          <figure>
+            <img src="./img/guide-rel-stylesheet.png" alt="Link tag with rel attribute added">
+            <figcaption>Adding the <code>rel</code> attribute</figcaption>
+          </figure>
+
+          <p>
+            Then, tell the browser <em>which</em> file we’re linking to by adding the <code>href</code> attribute:
+          </p>
+
+          <pre><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
+
+          <figure>
+            <img src="./img/guide-boilerplate-href.png" alt="Link tag with href attribute added">
+            <figcaption>Adding the <code>href</code> attribute to link the CSS file</figcaption>
+          </figure>
+
+          <p>
+            Perfect! Your <strong>builder</strong> (HTML) and <strong>designer</strong> (CSS) are now connected.
+          </p>
+
+          <h3>Styling the Paragraph</h3>
+
+          <p>
+            Inside your <code>style.css</code> file, add this rule:
+          </p>
+
+<pre><code>p {
+  color: blue;
+}</code></pre>
+
+          <p>
+            The <code>p</code> refers to the paragraph element we just created, and everything inside the curly braces defines how it should look. 
+            The property <code>color</code> changes the text color, and <code>blue</code> is its value. 
+            You can use other color names if you prefer—try <code>red</code>, <code>green</code>, or <code>purple</code>.
+          </p>
+
+          <p>
+            Save your work and check your browser—your paragraph should now appear in blue!
+          </p>
+
+          <p class="checkpoint">
+            ✨ Great job! You’ve created your first paragraph element and given it style. 
+            You now know how to link a stylesheet and control how your content appears.
+          </p>
+        </article>
+        
       </article>
 
 

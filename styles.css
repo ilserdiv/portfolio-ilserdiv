@@ -124,13 +124,13 @@ p {
     line-height: 1.4;
 }
 
-
 a:link {
   text-decoration: underline;
-  color: var(--text-muted);
+  color: var(--text-sharp);
 } 
 a:visited {
   text-decoration: none;
+  color: var(--text-muted);
 }
 a:hover, a:focus {
   color: var(--color-3);
@@ -160,7 +160,6 @@ figure {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
 }
 
 figcaption {

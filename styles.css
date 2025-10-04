@@ -1,27 +1,30 @@
+/*Variables and Reset*/
+
 :root {
   --heading-font: "Inter", sans-serif;
   --body-font: "Roboto", sans-serif;
   --border: hsl(0, 0%, 50%);
-  --color-primary: hsl(210, 90%, 45%);
-  --color-secondary: hsl(340, 80%, 50%);
+  --color-1: hsl(0, 100%, 50%);
+  --color-2: hsl(150, 100%, 50%);
+  --color-3: hsl(210, 100%, 50%);
 }
 
 :root[data-theme="light"] {
-  --bg: hsl(0, 0%, 90%);
-  --div: hsl(0, 0%, 85%);
-  --highlight: hsl(0, 0%, 80%);
+  --bg: hsl(0, 0%, 95%);
+  --div: hsl(0, 0%, 90%);
+  --highlight: hsl(0, 0%, 75%);
 
   --text-sharp: hsl(0, 0%, 10%);
-  --text-muted: hsl(0, 0%, 30%);
+  --text-muted: hsl(0, 0%, 25%);
 }
 
 :root[data-theme="dark"] {  
-  --bg: hsl(0, 0%, 10%);
-  --div: hsl(0, 0%, 15%);
-  --highlight: hsl(0, 0%, 20%);
+  --bg: hsl(0, 0%, 5%);
+  --div: hsl(0, 0%, 10%);
+  --highlight: hsl(0, 0%, 25%);
 
   --text-sharp: hsl(0, 0%, 90%);
-  --text-muted: hsl(0, 0%, 70%);
+  --text-muted: hsl(0, 0%, 75%);
 }
 
 * {
@@ -30,6 +33,8 @@
   box-sizing: border-box;
   color: var(--text-sharp);
 }
+
+/*Divisions*/
 
 body {
   background: var(--bg);
@@ -87,6 +92,8 @@ div {
   align-items: center;
 }
 
+/*Text elements*/
+
 hr {
   margin: 1em;
   background-color: var(--section);
@@ -117,35 +124,19 @@ p {
     line-height: 1.4;
 }
 
-img {
-  width: 200px;
-  display: block;
-  background: linear-gradient(-45deg, var(--highlight), var(--text-muted));
-  padding: 2px;
-}
 
-a {
+a:link {
+  text-decoration: underline;
   color: var(--text-muted);
+} 
+a:visited {
+  text-decoration: none;
 }
 a:hover, a:focus {
-  color: var(--color-primary);
+  color: var(--color-3);
 }
 a:active {
-  color: var(--color-secondary);
-}
-
-a > img {
-  border: 2px solid var(--border);
-  animation: clickableImage 5s linear infinite;
-}
-@keyframes clickableImage {20%, 30% { border: 2px solid var(--color-primary); } 50% {border-color: var(--border); } }
-
-a > img:hover, a > img:focus {
-  border: 2px solid var(--color-primary);
-  animation: none;
-}
-a > img:active {
-  border: 2px solid var(--color-secondary);
+  color: var(--color-2);
 }
 
 ul, ol {
@@ -158,6 +149,57 @@ li {
 li:last-of-type {
     margin-bottom: 8px;
 }
+
+/*Media*/
+
+figure {
+  width: fit-content;
+  border-left: 8px solid var(--color-3);
+  padding: 8px 2px;
+  margin: 12px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+figcaption {
+  color: var(--text-muted);
+  font-style: italic;
+  font-size: 0.85em;
+}
+figcaption:before {
+  content: '"';
+}
+figcaption:after {
+  content: '"';
+}
+
+img {
+  width: 200px;
+  min-width: 220px;
+  min-height: 110px;
+  display: block;
+  background: var(--border);
+  padding: 2px;
+}
+
+a > img {
+  border: 2px solid var(--border);
+  animation: clickableImage 5s linear infinite;
+}
+@keyframes clickableImage {20%, 30% { border: 2px solid var(--color-3); } 50% {border-color: var(--border); } }
+
+a > img:hover, a > img:focus {
+  border: 2px solid var(--color-3);
+  animation: none;
+}
+a > img:active {
+  border: 2px solid var(--color-2);
+}
+
+/*Code elements*/
+
 pre {
   background-color: var(--highlight);
   padding: 1em;
@@ -166,7 +208,7 @@ pre {
 
 code {
   background-color: var(--highlight);
-  color: var(--color-secondary);
+  color: var(--color-1);
   padding: 2px;
   border-radius: 4px;
   font-family: monospace;

@@ -24,8 +24,6 @@
       Because of that, the design here is kept plain and minimal, so expect simplicity rather than advanced styling.
     </p>
     
-    <hr>
-
     <article>
       <h2>The Builder, The Designer, and The Systems Engineer</h2>
       <p>
@@ -33,28 +31,49 @@
       </p>
 
       <ul>
-        <li><strong>The Builder</strong> → <code>HTML</code>, providing the structure—the place and materials of your site.</li>
-        <li><strong>The Designer</strong> → <code>CSS</code>, shaping the design and creating a clear, appealing interface.</li>
-        <li><strong>The Systems Engineer</strong> → <code>JavaScript</code>, integrating the functionality and connections—like plumbing and wiring—so the page becomes interactive and dynamic, adapting to user actions and keeping data flowing smoothly.</li>
+        <li>
+          <figure>
+            <img src="./img/logo-html.png" alt="HTML Logo">
+            <figcaption>
+              <strong>The Builder</strong> → <code>HTML</code>, providing the structure—the place and materials of your site.
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="./img/logo-css.png" alt="CSS Logo">
+            <figcaption>
+              <strong>The Designer</strong> → <code>CSS</code>, shaping the design and creating a clear, appealing interface.
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="./img/logo-js.png" alt="JavaScript Logo">
+            <figcaption>
+              <strong>The Systems Engineer</strong> → <code>JavaScript</code>, integrating the functionality and connections—like plumbing and wiring—so the page becomes interactive and dynamic, adapting to user actions and keeping data flowing smoothly.
+            </figcaption>
+          </figure>
+        </li>
       </ul>
       
-      <div>
-        <img src="./img/logo-html.png" alt="HTML Logo">
-        <img src="./img/logo-css.png" alt="CSS Logo">
-        <img src="./img/logo-js.png" alt="JavaScript Logo">
-      </div>
     </article>
 
     <article>
-      <h3>Getting Started: Essential Tools</h3>
+      <h2>Getting Started: Essential Tools</h2>
       <p>
         You don’t need much to begin—just a code editor to write your files and a browser to test them. 
         Many options exist, but here are two reliable starting points:
       </p>
 
       <section>
-        <h4>Visual Studio Code (Editor)</h4>
-        <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer"><img src="./img/logo-vs-code.png" alt="Visual Studio Code Logo"></a>
+        <h3>Visual Studio Code (Editor)</h3>
+        <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">
+          <figure>
+            <img src="./img/logo-vs-code.png" alt="Visual Studio Code Logo">
+            <figcaption>A powerful, beginner-friendly code editor for creating and managing files.</figcaption>
+          </figure>
+        </a>
         <p>
           A code editor is where you create and manage your files. Visual Studio Code is a popular choice because it’s powerful yet beginner-friendly. 
           With features like auto-completion, debugging, and extensions included, you can get started quickly without extra setup.
@@ -62,16 +81,19 @@
       </section>
 
       <section>
-        <h4>Google Chrome (Browser)</h4>
-        <a href="https://www.google.com/intl/en_us/chrome/" target="_blank" rel="noopener noreferrer"><img src="./img/logo-google-chrome.png" alt="Google Chrome Logo"></a>
+        <h3>Google Chrome (Browser)</h3>
+        <a href="https://www.google.com/intl/en_us/chrome/" target="_blank" rel="noopener noreferrer">
+          <figure>
+            <img src="./img/logo-google-chrome.png" alt="Google Chrome Logo">
+            <figcaption>A reliable browser for testing your code, reflecting real user experiences.</figcaption>
+          </figure>
+        </a>
         <p>
           The browser is where you see your code in action. Chrome is widely used, making it a reliable choice for testing since it reflects what most visitors will experience. 
           Some developers also use Firefox for its developer tools, but Chrome is a solid default for everyday testing.
         </p>
       </section>
     </article>
-
-    <hr>
 
     <article>
         <h2>Lay the Groundwork</h2>
@@ -82,119 +104,152 @@
             <li><a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">Visual Studio Code (IDE)</a></li>
             <li><a href="https://www.google.com/intl/en_us/chrome/" target="_blank" rel="noopener noreferrer">Google Chrome (Browser)</a></li>
         </ul>
-
-        <h3>Step 1: Create Your Project Folder</h3>
-        <p>
-            Start by making a new folder anywhere on your computer. This will hold all the files 
-            for your project.
-        </p>
-
-        <h3>Step 2: Open the Folder in VS Code</h3>
-        <p>
-            Open <strong>Visual Studio Code</strong>.  
-            Go to <em>File &gt; Open Folder</em> and select the folder you just created.
-        </p>
-        <img src="./img/guide-open-folder.png" alt="Guide for creating a project folder">
-
-        <h3>Step 3: Add Your First File</h3>
-        <p>
-            Once inside VS Code, create a new file and name it <code>index.html</code>.  
-            You can use the <em>New File</em> icon or a keyboard shortcut. 
-        </p>
-        <img src="./img/guide-new-file.png" alt="Guide for creating index.html">
-
-        <h3>Step 4: Set Up the Foundation</h3>
-        <p>
-            Now open <code>index.html</code> and add the very first pieces of code to create the <strong>html</strong> element—the <strong>location</strong> where your site's metadata and all the elements will live:
-        </p>
+        
+        <section>
+          <h3>Step 1: Create Your Project Folder</h3>
+          <p>
+              Start by making a new folder anywhere on your computer. This will hold all the files 
+              for your project.
+          </p>
+        </section>
+        
+        <section>
+          <h3>Step 2: Open the Folder in VS Code</h3>
+          <p>
+              Open <strong>Visual Studio Code</strong>.  
+              Go to <em>File &gt; Open Folder</em> and select the folder you just created.
+          </p>
+          <figure>
+            <img src="./img/guide-open-folder.png" alt="Guide for creating a project folder">
+            <figcaption>Opening your new project folder in Visual Studio Code.</figcaption>
+          </figure>
+        </section>
+         
+        <section>
+          <h3>Step 3: Add Your First File</h3>
+          <p>
+              Once inside VS Code, create a new file and name it <code>index.html</code>.  
+              You can use the <em>New File</em> icon or a keyboard shortcut. 
+          </p>
+          <figure>
+            <img src="./img/guide-new-file.png" alt="Guide for creating index.html">
+            <figcaption>Creating your first file, index.html, in VS Code.</figcaption>
+          </figure>
+        </section>
+          
+        <section>
+          <h3>Step 4: Set Up the Foundation</h3>
+          <p>
+              Now open <code>index.html</code> and add the very first pieces of code to create the <strong>html</strong> element—the <strong>location</strong> where your site's metadata and all the elements will live:
+          </p>
 
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;&lt;/html&gt;
 </code></pre>
 
-        <p>Here’s what’s happening:</p>
-        <ul>
-            <li>
-            <code>&lt;!DOCTYPE html&gt;</code> → Tells the browser you’re using the latest 
-            version of HTML (HTML5).
-            </li>
-            <li>
-            <code>&lt;html&gt; ... &lt;/html&gt;</code> → The <strong>HTML element</strong> 
-            wraps everything on your page. All your content will go inside these tags.
-            </li>
-        </ul>
-        <img src="./img/guide-html-tags.png" alt="HTML tags">
-        <p>
-            Tags usually work in pairs: an <em>opening tag</em> <code>&lt;tag&gt;</code> 
-            and a <em>closing tag</em> <code>&lt;/tag&gt;</code>. 
-            Whatever goes in between is the element’s content.
-        </p>
+          <p>Here’s what’s happening:</p>
+          <ul>
+              <li>
+                <code>&lt;!DOCTYPE html&gt;</code> → Tells the browser you’re using the latest 
+                version of HTML (HTML5).
+              </li>
+              <li>
+                <code>&lt;html&gt; ... &lt;/html&gt;</code> → The <strong>HTML element</strong> 
+                wraps everything on your page. All your content will go inside these tags.
+              </li>
+          </ul>
 
-        <h3>Step 5: Add the Core Sections</h3>
-        <p>
-            Inside the <code>&lt;html&gt;</code> tags, we add two essential parts:
-        </p>
+          <section>
+            <figure>
+              <img src="./img/guide-html-tags.png" alt="HTML tags">
+              <figcaption>Basic HTML tags: opening and closing pairs enclose your content.</figcaption>
+            </figure>
+            <p>
+              Tags usually work in pairs: an <em>opening tag</em> <code>&lt;tag&gt;</code> 
+              and a <em>closing tag</em> <code>&lt;/tag&gt;</code>. 
+              Whatever goes in between is the element’s content.
+            </p>
+          </section>
+        </section>
+          
+        <section>
+          <h3>Step 5: Add the Core Sections</h3>
+          <p>
+              Inside the <code>&lt;html&gt;</code> tags, we add two essential parts:
+          </p>
 
 <pre><code>&lt;head&gt;&lt;/head&gt;
 &lt;body&gt;&lt;/body&gt;
 </code></pre>
 
-<hr>
+          <hr>
 
-        <ul>
-            <li>
-            <code>&lt;head&gt;</code> → Think of this as the backstage area.  
-            It holds metadata, stylesheets, and scripts that prepare your page.  
-            While most of it isn’t visible to the user, some things—like the title and favicon—do appear.
-            </li>
-            <li>
-            <code>&lt;body&gt;</code> → This is the main stage.  
-            Everything the user <em>sees and interacts with</em>—text, images, buttons, links—goes here.
-            </li>
-        </ul>
+          <ul>
+              <li>
+                <code>&lt;head&gt;</code> → Think of this as the backstage area.  
+                It holds metadata, stylesheets, and scripts that prepare your page.  
+                While most of it isn’t visible to the user, some things—like the title and favicon—do appear.
+              </li>
+              <li>
+                <code>&lt;body&gt;</code> → This is the main stage.  
+                Everything the user <em>sees and interacts with</em>—text, buttons, links—goes here.
+              </li>
+          </ul>
 
-        <p>At this point, your file should look like this:</p>
-
-        <img src="./img/guide-base-boilerplate.png" alt="HTML with doctype, html, head, and body">
-    
-        <p>
-          The setup is complete—you’ve reached your first milestone: your project location is ready for building.
-        </p>
-      </article>
-
-      <hr>
-
-      <article>
-        <h2>Opening Your Project</h2>
-
-        <section>
-          <p>
-            To view your <strong>output</strong>, you have two options. 
-            First, you can right–click on the HTML file in your file explorer and open it with your browser (like Chrome). 
-            Second, you can install the <strong>Live Server</strong> extension in VS Code, which allows you to preview your site in real-time as you code.
-          </p>
+          <p>At this point, your file should look like this:</p>
 
           <figure>
-            <img src="img/guide-open-index-in-chrome.png" alt="Open HTML file in Chrome">
-            <figcaption>Opening an HTML file in Chrome</figcaption>
+            <img src="./img/guide-base-boilerplate.png" alt="HTML with doctype, html, head, and body">
+            <figcaption>Your basic HTML boilerplate: doctype, html, head, and body sections.</figcaption>
           </figure>
-
-          <p>
-            You can get the Live Server extension here: 
-            <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" target="_blank">Download Live Server</a>
-            <img src="https://ritwickdey.gallerycdn.vsassets.io/extensions/ritwickdey/liveserver/5.7.9/1736542717282/Microsoft.VisualStudio.Services.Icons.Default" alt="Live Server Extension Logo">
-          </p>
-
-          <p>
-            If you open <code>index.html</code> right now, you’ll just see a completely blank page. 
-            That’s normal—because we haven’t added any content yet. 
-            In the next step, we’ll start placing your first materials on the page.
-          </p>
         </section>
-        
-        <article>
-          <h2>Adding Your First Material: Text and Color</h2>
+          
+      </section>
 
+      <p>
+        The setup is complete—you’ve reached your first milestone: your project location is ready for building.
+      </p>
+    </article>
+
+    <article>
+      <h2>Foundation & Materials</h2>
+
+      <section>
+        <h3>Browser View</h3>
+        <p>
+          To view your <strong>output</strong>, you have two options. 
+          First, you can right–click on the HTML file in your file explorer and open it with your browser (like Chrome). 
+          Second, you can install the <strong>Live Server</strong> extension in VS Code, which allows you to preview your site in real-time as you code.
+        </p>
+
+        <figure>
+          <img src="img/guide-open-index-in-chrome.png" alt="Open HTML file in Chrome">
+          <figcaption>Right-click to open your index.html directly in Chrome for a quick preview.</figcaption>
+        </figure>
+
+        <p>
+          You can get the Live Server extension here: 
+          <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" target="_blank">Download Live Server</a>.
+        </p>
+
+        <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" target="_blank" rel="noopener noreferrer">
+          <figure>
+            <img src="https://ritwickdey.gallerycdn.vsassets.io/extensions/ritwickdey/liveserver/5.7.9/1736542717282/Microsoft.VisualStudio.Services.Icons.Default" alt="Live Server Extension Logo">
+            <figcaption>Live Server: Real-time preview extension for VS Code—install via Marketplace.</figcaption>
+          </figure>
+        </a>
+
+        <p>
+          If you open <code>index.html</code> right now, you’ll just see a completely blank page. 
+          That’s normal—because we haven’t added any content yet. 
+          In the next step, we’ll start placing your first materials on the page.
+        </p>
+      </section>
+        
+      <article>
+        <h3>Adding Your First Material: Text and Color</h3>
+
+        <section>
           <p>
             Let’s start by putting text on your site. Text is the most common and one of the most important elements in any webpage—it lets you communicate ideas, details, and information to your users. 
           </p>
@@ -220,16 +275,16 @@
 
           <figure>
             <img src="./img/guide-boilerplate-p.png" alt="HTML boilerplate with paragraph element inside the body">
-            <figcaption>HTML file with a paragraph element inside the body</figcaption>
+            <figcaption>Adding a paragraph element inside the body tag to display your first text.</figcaption>
           </figure>
 
-          <p class="checkpoint">
+          <p>
             🎉 Great! You’ve just added your first material. Your site now has its first visible content.
           </p>
-
-          <hr>
-
-          <h3>Connecting the Design</h3>
+        </section>
+          
+        <section>
+          <h4>Connecting the Design</h4>
 
           <p>
             It still looks simple for now, because we’re just <em>building</em>. 
@@ -249,7 +304,7 @@
 
           <figure>
             <img src="./img/guide-boilerplate-link.png" alt="HTML with link tag added inside head">
-            <figcaption>Adding a link tag to connect the stylesheet</figcaption>
+            <figcaption>Inserting the link tag in the head to reference external files like stylesheets.</figcaption>
           </figure>
 
           <p>
@@ -260,7 +315,7 @@
 
           <figure>
             <img src="./img/guide-rel-stylesheet.png" alt="Link tag with rel attribute added">
-            <figcaption>Adding the <code>rel</code> attribute</figcaption>
+            <figcaption>Specifying the rel attribute to define the link type (e.g., stylesheet).</figcaption>
           </figure>
 
           <p>
@@ -271,14 +326,16 @@
 
           <figure>
             <img src="./img/guide-boilerplate-href.png" alt="Link tag with href attribute added">
-            <figcaption>Adding the <code>href</code> attribute to link the CSS file</figcaption>
+            <figcaption>Adding the href attribute to point to your specific CSS file.</figcaption>
           </figure>
 
           <p>
             Perfect! Your <strong>builder</strong> (HTML) and <strong>designer</strong> (CSS) are now connected.
           </p>
-
-          <h3>Styling the Paragraph</h3>
+        </section>
+          
+        <section>
+          <h4>Styling the Paragraph</h4>
 
           <p>
             Inside your <code>style.css</code> file, add this rule:
@@ -298,19 +355,23 @@
             Save your work and check your browser—your paragraph should now appear in blue!
           </p>
 
-          <p class="checkpoint">
+          <p>
             ✨ Great job! You’ve created your first paragraph element and given it style. 
             You now know how to link a stylesheet and control how your content appears.
           </p>
-        </article>
-        
+        </section>
       </article>
-
+        
+      <article>
+        <h3>The Box Model</h3>
+      </article>
+        
+    </article>
 
   </main>
   
   <footer></footer>
 
-  <script src="styles.js"></script>
+  <script src="okay.js"></script>
 </body>
 </html>

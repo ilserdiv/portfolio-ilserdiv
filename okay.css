@@ -210,6 +210,7 @@
   }
 
   img {
+    width: 250px;
     min-width: 220px;
     min-height: 110px;
     display: block;
